@@ -24,7 +24,6 @@ public class HelloWorld {
 						result += c;
 						break;
 					}
-
 				}
 			}
 		}
