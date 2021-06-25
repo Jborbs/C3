@@ -1,6 +1,8 @@
 package com.codechallenge;
 
 import java.util.ArrayList;
+import java.util.*;
+import java.io.*;
 
 
 /**
@@ -12,6 +14,7 @@ public class HelloWorld {
 		Duck duck = new Duck();
 		String quack = duck.getDuckQuack();
 		System.out.println(quack);
+		duck.readFile();
 	}
 
 
@@ -79,7 +82,32 @@ class Duck{
 		return getDuckW() + getDuckO2() + getDuckR() + getDuckL3() + getDuckD();
 	}
 
+	public static String readFile(){
+		try {
+			String combinedSong = new String();
+			File myObj = new File(".\\DuckSong.txt");
+			Scanner myReader = new Scanner(myObj);
+			while (myReader.hasNextLine()) {
+				String data = myReader.nextLine();
+				combinedSong += data;
+			}
+			myReader.close();
+			char tempArray[] = combinedSong.toCharArray();
 
+			// sort tempArray
+			Arrays.sort(tempArray);
+			return Arrays.toString(tempArray);
+		} catch (FileNotFoundException e) {
+			System.out.println("An error occurred.");
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public String sortArray(){
+		String duckSong = this.readFile();
+		return duckSong;
+	}
 }
 
 //read a file
