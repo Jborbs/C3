@@ -82,15 +82,6 @@ public class HelloWorld {
 		// HelloWorld \u001c System.out.print((char)114);
 		// HelloWorld \u000d System.out.print((char)108);
 		// HelloWorld \u000d System.out.print((char)100);
-
-		// 32
-		// 111 o
-
-		// 87 W
-
-		// r 114
-
-		// D 100
 	}
 
 	public static int reduce(int a, int b, int c, int four, int five) {
