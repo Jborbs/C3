@@ -7,6 +7,7 @@ import java.util.ArrayList;
  */
 public class HelloWorld {
 
+	String words="The quick brown fox jumps over the lazy dog";
 	public static void main(String[] args) {
 		System.out.println("Hello World");
 	}
