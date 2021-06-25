@@ -1,15 +1,13 @@
 package com.codechallenge;
-
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by merciersj on 8/29/2018.
- */
-public class HelloWorld {
+public class Runner2 {
 
-	public static void main(String[] args) {
-GraphUtils util = new GraphUtils();
+public static void main(String[] args) {
+		
+		
+		GraphUtils util = new GraphUtils();
 		
 		DirectedGraph graph2 = new DirectedGraph(); //try with directed graph
 		
@@ -52,6 +50,5 @@ GraphUtils util = new GraphUtils();
 		
 		System.out.print("ello World");
 	}
-	
-	
+
 }
