@@ -32,7 +32,8 @@ public class HelloWorldTest {
     }
 
     @Test
-    public void out() {
+    public void out() throws Exception
+    {
         HelloWorld.main(args);
         assertEquals("Hello World", outcontent.toString().trim());
     }
