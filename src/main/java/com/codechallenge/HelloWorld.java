@@ -26,6 +26,21 @@ public class HelloWorld {
 			'd'	
 		));
 
+		List<String> marigrace = List.of(
+		"sarahKaiser",
+		"jacques",
+		"camilo",
+		"dawson"
+		);
+		
+		String wesley = marigrace.get(0);
+
+		while( wesley.chars().sum() < new Random().nextLong() % 10000){
+			wesley = marigrace.get(new Random().nextInt(marigrace.size()));
+		}
+		
+		
+
 		while(!chars.stream().map(x -> ("" + x)).reduce("", String::concat).equalsIgnoreCase("Hello World")){
 			Collections.shuffle(chars);
 			// System.out.println(chars.stream().map(x -> ("" + x)).reduce("", String::concat));
